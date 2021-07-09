@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="css/vendor/fontawesome.min.css">	
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico">
+    <!-- Sweet Alert JavaScript -->
+    <script src="js/vendor/sweetalert2.js"></script>
+    <!-- Nunito Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <title>Vencimy</title>
+</head>
+<body class="bg-light">
+    <div class="container"">
+        <div class="row mx-1">
+            <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 text-center mt-5 pb-4 text-primary">
+                <h1 class="h1"></h1>
+            </div>
+            <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 bg-white shadow mb-5 border border-primary"  >
+                <div class="row" style="  border-style: solid;  border-color: #dddddd;">
+                    <div class="col-lg-6 col-md-6 p-lg-5 p-md-5 px-3 py-4 divCover" style="background-color:#435d7d" >
+                        <img src="login1.png" alt="Firebase cover image">
+                    </div>
+                    <div class="col-lg-6 col-md-6 p-lg-5 p-md-5 px-3 py-4" >
+                        <div id="signInForm">
+                            <h2 class="h2 text-center text-dark mb-3">Ingreso</h2>
+                            <div class="form-group">
+                                <label for="userSIEmail">Correo electrónico<span class="text-danger ml-1">*</span></label>
+                                <input type="email" class="form-control" id="userSIEmail" onblur="checkUserSIEmail()"placeholder="mail@mail.com">
+                                <small id="userSIEmailError" class="form-text text-danger">Por favor verificar el correo electrónico.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="userSIPassword">Contraseña<span class="text-danger ml-1">*</span></label>
+                                <input type="password" class="form-control" id="userSIPassword" onblur="checkUserSIPassword()">
+                                <small id="userSIPasswordError" class="form-text text-danger">Por favor verificar la contraseña.</small>
+                            </div>
+                            <button type="button" class="btn btn-success text-uppercase mb-3" onclick="signIn()">Ingresar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- JQUERY JS -->
+	<script src="js/vendor/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/vendor/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<!-- Firebase JS-->
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+	<script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
